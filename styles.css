@@ -6,20 +6,23 @@ body {
 }
 
 header {
+    position: absolute;
     display: flex;
-    height: 5rem;
+    height: 3.1rem;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f0f5fb;
-    color: white;
+    /* background-color: #f0f5fb; */
+    color: white; 
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5) 
 }
 
 .brand {
-    font-size: 2rem;
-    color: #ea6805;
+    font-size: 1.5rem;
+    color: #e26e14;
     margin-left: 5rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 nav ul {
@@ -43,18 +46,20 @@ nav.active {
     height: 3px;
     background-color: rgb(44, 43, 43);
     margin: 5px;
+    margin-right: 5rem;
     transition: all 0.3s ease;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 7px 15px;
 }
 
 nav ul li a {
-    color: #ea6805;
-    font-weight: bold;
+    color: #f78d47;
+    margin-top: 9px;
+    font-weight: 300;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     transition: color 0.3s ease;
 }
 
@@ -504,6 +509,10 @@ footer {
         justify-content: space-between;
         align-items: center;
         padding: 10px;
+        
+    }
+    .header-box h1{
+        font-size: 20px;
     }
 
     nav {
@@ -517,9 +526,15 @@ footer {
         flex-direction: column;
         text-align: center;
         gap: 9px;
-        background-color: #f8f8f8;
+        background: rgba(255, 255, 255, 0.5) ;
         font-size: 10px;
         
+    }
+    nav ul {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    nav ul li{
+        line-height: 1.5 rem;
     }
 
     .hamburger {
@@ -544,8 +559,6 @@ footer {
         display: none;
     }
 }
-
-
 
 
 @media (max-width: 768px) {
@@ -599,11 +612,12 @@ footer {
     }
 
     .button-container .contact-button {
-        width: 100%;
+        width: 50%;
         max-width: 500px;
         padding: 15px;
         font-size: 1.2rem;
         margin: 20px 0;
+        background-color: #ea6805;
     }
 }
 
@@ -633,7 +647,7 @@ footer {
     }
 
     .button-container01 .contact-button01 {
-        width: 100%;
+        width: 30%;
         padding: 12px;
         font-size: 1rem;
         display: inline-block;
@@ -674,6 +688,7 @@ footer {
 @media (max-width: 768px) {
     .full-length-container {
         flex-direction: column;
+        padding: 10px;
     }
 
     .image-container-box {
@@ -683,7 +698,7 @@ footer {
     .text-container-box {
         width: 100%;
         max-width: 500px;
-        margin: 10px 0;
+        margin: 10px 0px;
     }
 
     .text-container-box h1 {
@@ -699,9 +714,11 @@ footer {
     }
 
     .learn-more-btn {
-        width: 100%;
-        padding: 12px;
+        width: 30%;
+        padding: 10px;
         font-size: 1rem;
+        display: inline-block;
+        margin-right: 9px;
     }
 }
 
